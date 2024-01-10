@@ -2,6 +2,7 @@ import { obtenPacientesAsignadosAPediatria } from "./apartado-1-a";
 import { obtenPacientesAsignadosAPediatriaYMenorDiez } from "./apartado-1-b";
 import { activarProtocoloUrgencia } from "./apartado-2";
 import { reasignaPacientesAMedicoFamilia } from "./apartado-3";
+import { HayPacientesDePediatria } from "./apartado-4";
 
 type Especialidad = "Medico de familia" | "Pediatra" | "Cardiólogo";
 
@@ -83,3 +84,4 @@ console.log(obtenPacientesAsignadosAPediatriaYMenorDiez(pacientes));
 console.log(obtenPacientesAsignadosAPediatria(pacientes))
 console.log(activarProtocoloUrgencia(pacientes))
 console.log(reasignaPacientesAMedicoFamilia(pacientes))
+console.log(HayPacientesDePediatria(pacientes))
