@@ -1,5 +1,6 @@
 import { obtenPacientesAsignadosAPediatria } from "./apartado-1-a";
 import { obtenPacientesAsignadosAPediatriaYMenorDiez } from "./apartado-1-b";
+import { activarProtocoloUrgencia } from "./apartado-2";
 
 type Especialidad = "Medico de familia" | "Pediatra" | "Cardiólogo";
 
@@ -79,3 +80,4 @@ export const pacientes: Pacientes[] = [
 
 console.log(obtenPacientesAsignadosAPediatriaYMenorDiez(pacientes));
 console.log(obtenPacientesAsignadosAPediatria(pacientes))
+console.log(activarProtocoloUrgencia(pacientes))
