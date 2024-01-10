@@ -1,6 +1,9 @@
+import { obtenPacientesAsignadosAPediatria } from "./apartado-1-a";
+import { obtenPacientesAsignadosAPediatriaYMenorDiez } from "./apartado-1-b";
+
 type Especialidad = "Medico de familia" | "Pediatra" | "Cardiólogo";
 
- export interface Pacientes {
+export interface Pacientes {
   id: number;
   nombre: string;
   apellidos: string;
@@ -11,7 +14,7 @@ type Especialidad = "Medico de familia" | "Pediatra" | "Cardiólogo";
   edad: number;
 }
 
- export const pacientes: Pacientes[] = [
+export const pacientes: Pacientes[] = [
   {
     id: 1,
     nombre: "John",
@@ -74,8 +77,5 @@ type Especialidad = "Medico de familia" | "Pediatra" | "Cardiólogo";
   },
 ];
 
-
-const obtenPacientesAsignadosAPediatria = pacientes.filter(
-  (pacientes : Pacientes) => pacientes.especialidad === "Pediatra"
-);
-console.log (obtenPacientesAsignadosAPediatria)
+console.log(obtenPacientesAsignadosAPediatriaYMenorDiez(pacientes));
+console.log(obtenPacientesAsignadosAPediatria(pacientes))
